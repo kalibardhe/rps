@@ -32,6 +32,36 @@
             }
         } 
 
+        const game = () => {
+            let playerScore = 0;
+            let computerScore = 0;
+
+            for (let i = 0; i < 5; i++) {
+                let playerSelection = prompt('rock, paper, scissors:');
+                let computerSelection = getComputerChoice();
+                let result = playRound(playerSelection, computerSelection);
+                console.log(result);
+
+                if (result.startsWith('You win!')) {
+                    playerScore++;
+                } else if (result.startsWith('You lose!')) {
+                    computerScore++;
+                }
+            }
+
+            console.log('Final Score:');
+            console.log('Player: ' + playerScore);
+            console.log('Computer: ' + computerScore);
+
+            if (playerScore > computerScore) {
+                console.log('Congratulations! You win the game!');
+            } else if (playerScore < computerScore) {
+                console.log('You lose! Too bad!');
+            } else {
+                console.log("It's a tie! The game ends in a draw!");
+            }
+        }
+
     </script>
 </body>
 </html>
