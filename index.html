@@ -9,9 +9,9 @@
 <body>
     <script>
         function getComputerChoice() {
-            let choice = ['rock', 'paper', 'scissors'];
-            let randomIndex = Math.floor(Math.random() * choice.length);
-            let randomChoice = choice[randomIndex];
+            var choice = ['rock', 'paper', 'scissors'];
+            var randomIndex = Math.floor(Math.random() * choice.length);
+            var randomChoice = choice[randomIndex];
             return randomChoice;
         }
 
@@ -33,13 +33,13 @@
         } 
 
         function game() {
-            let playerScore = 0;
-            let computerScore = 0;
+            var playerScore = 0;
+            var computerScore = 0;
 
-            for (let i = 0; i < 5; i++) {
-                let playerSelection = prompt('rock, paper, scissors:');
-                let computerSelection = getComputerChoice;
-                let result = playRound(playerSelection, computerSelection);
+            for (var i = 0; i < 5; i++) {
+                var playerSelection = prompt('rock, paper, scissors:');
+                var computerSelection = getComputerChoice;
+                var result = playRound(playerSelection, computerSelection);
                 console.log(result);
 
                 if (result.startsWith('You win!')) {
