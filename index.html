@@ -10,7 +10,7 @@
     <script>
         const getComputerChoice = () => {
             let choice = ['rock', 'paper', 'scissors'];
-            let randomIndex = Math.floor(Math.random() * words.length);
+            let randomIndex = Math.floor(Math.random() * choice.length);
             let randomChoice = choice[randomIndex];
             return randomChoice;
         }
@@ -38,7 +38,7 @@
 
             for (let i = 0; i < 5; i++) {
                 let playerSelection = prompt('rock, paper, scissors:');
-                let computerSelection = getComputerChoice();
+                let computerSelection = getComputerChoice;
                 let result = playRound(playerSelection, computerSelection);
                 console.log(result);
 
