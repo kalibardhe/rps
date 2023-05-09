@@ -8,43 +8,7 @@
 </head>
 <body>
     <script>
-        function getComputerChoice() {
-            let choice = ["Rock", "Paper", "Scissors"];
-            let randomIndex = Math.floor(Math.random() * choice.length);
-            let randomChoice = choice[randomIndex];
-            return randomChoice.toLowerCase();
-        }
-
-        let computerChoice = getComputerChoice();
-
-
-    
-        function playRound(playerSelection, computerSelection) {
-            if (computerChoice === playerSelection.toLowerCase()) {
-                console.log("Draw!");
-            } else if (computerChoice.toLowerCase() === 'Rock' && playerSelection.toLowerCase() === 'Paper') {
-                console.log('You Win! Paper beats Rock!');
-            } else if (computerChoice.toLowerCase() === 'Rock' && playerSelection.toLowerCase() === 'Scissors') {
-                console.log('You lose! Rock beats Scissors!');
-            } else if (computerChoice.toLowerCase() === 'Paper' && playerSelection.toLowerCase() === 'Rock') {
-                console.log('You lose! Paper beats Rock!');
-            } else if (computerChoice.toLowerCase() === 'Paper' && playerSelection.toLowerCase() === 'Scissors') {
-                console.log('You win! Scissors beats Paper!');
-            } else if (computerChoice.toLowerCase() === 'Scissors' && playerSelection.toLowerCase() === 'Rock') {
-                console.log('You win! Rock beats Scissors!');
-            } else if (computerChoice.toLowerCase() === 'Scissors' && playerSelection.toLowerCase() === 'Paper') {
-                console.log('You lose! Scissors beats Paper!');
-            } else {
-                console.log('Invalid input, please choose between "Rock", "Paper" or "Scissors"');
-            }
-        }
-
-        const playerSelection = prompt('Rock, Paper, Scissors:');
-        const computerSelection = getComputerChoice();
-        console.log(playRound(playerSelection, computerSelection));
-
-// Create function that randomly returns rock, paper or scissors for the computer
-// Create a function to play a round
+        
     </script>
 </body>
 </html>
