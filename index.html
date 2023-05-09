@@ -20,19 +20,19 @@
 
 
         function playRound(playerSelection, computerSelection) {
-            if (computerChoice === playerChoice) {
+            if (computerChoice === playerSelection) {
                 console.log("Draw!");
-            } else if (computerChoice === 'rock' && playerChoice === 'paper') {
+            } else if (computerChoice === 'rock' && playerSelection === 'paper') {
                 console.log('You Win!');
-            } else if (computerChoice === 'rock' && playerChoice === 'scissors') {
+            } else if (computerChoice === 'rock' && playerSelection === 'scissors') {
                 console.log('You lose!');
-            } else if (computerChoice === 'paper' && playerChoice === 'rock') {
+            } else if (computerChoice === 'paper' && playerSelection === 'rock') {
                 console.log('You lose!');
-            } else if (computerChoice === 'paper' && playerChoice === 'scissors') {
+            } else if (computerChoice === 'paper' && playerSelection === 'scissors') {
                 console.log('You win!');
-            } else if (computerChoice === 'scissors' && playerChoice === 'rock') {
+            } else if (computerChoice === 'scissors' && playerSelection === 'rock') {
                 console.log('You win!');
-            } else if (computerChoice === 'scissors' && playerChoice === 'paper') {
+            } else if (computerChoice === 'scissors' && playerSelection === 'paper') {
                 console.log('You lose');
             } else {
             console.log('Invalid input, please choose between "Rock", "Paper" or "Scissors"');
