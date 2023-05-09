@@ -9,12 +9,12 @@
 <body>
     <script>
         function getComputerChoice() {
-            let words = ["rock", "paper", "scissors"];
-            let randomIndex = Math.floor(Math.random() * words.length);
-            return words[randomIndex];
+            let choice = ["rock", "paper", "scissors"];
+            let randomIndex = Math.floor(Math.random() * choice.length);
+            return choice[randomIndex];
         }
 
-        let randomWord = getComputerChoice();
+        let computerChoice = getComputerChoice();
 
 
 // Create function that randomly returns rock, paper or scissors for the computer
