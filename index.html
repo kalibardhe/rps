@@ -9,10 +9,15 @@
 <body>
     <script>
         function getComputerChoice() {
-            let choice = ['rock', 'paper', 'scissors'];
-            let randomIndex = Math.floor(Math.random() * choice.length);
-            let randomChoice = choice[randomIndex];
-            return randomChoice;
+           let randomNum = Math.floor(Math.random() * 3);
+           
+           if (randomNum === 0) {
+            return 'rock';
+           } else if (randomNum === 1) {
+            return 'paper';
+           } else {
+            return 'scissors';
+           }
         }
 
         function playRound(playerSelection, computerSelection) {
