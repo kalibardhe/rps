@@ -9,15 +9,42 @@
 <body>
     <script>
         function getComputerChoice() {
-            let choice = ["rock", "paper", "scissors"];
+            let choice = ["Rock", "Paper", "Scissors"];
             let randomIndex = Math.floor(Math.random() * choice.length);
-            return choice[randomIndex];
+            let randomChoice = choice[randomIndex];
+            return randomChoice.toLowerCase();
+            
         }
 
         let computerChoice = getComputerChoice();
 
 
+        function playRound(playerSelection, computerSelection) {
+            if (computerChoice === playerChoice) {
+                console.log("Draw!");
+            } else if (computerChoice === 'rock' && playerChoice === 'paper') {
+                console.log('You Win!');
+            } else if (computerChoice === 'rock' && playerChoice === 'scissors') {
+                console.log('You lose!');
+            } else if (computerChoice === 'paper' && playerChoice === 'rock') {
+                console.log('You lose!');
+            } else if (computerChoice === 'paper' && playerChoice === 'scissors') {
+                console.log('You win!');
+            } else if (computerChoice === 'scissors' && playerChoice === 'rock') {
+                console.log('You win!');
+            } else if (computerChoice === 'scissors' && playerChoice === 'paper') {
+                console.log('You lose');
+            }
+        } else {
+            console.log('Invalid input, please choose between "Rock", "Paper" or "Scissors"');
+        }
+
+        const playerSelection = "rock";
+        const computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection, computerSelection));
+
 // Create function that randomly returns rock, paper or scissors for the computer
+// Create a function to play a round
     </script>
 </body>
 </html>
