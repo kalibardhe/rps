@@ -19,23 +19,24 @@
         let computerChoice = getComputerChoice();
 
 
+        function game()
         function playRound(playerSelection, computerSelection) {
             if (computerChoice === playerSelection) {
                 console.log("Draw!");
             } else if (computerChoice === 'rock' && playerSelection === 'paper') {
-                console.log('You Win!');
+                console.log('You Win! Paper beats Rock!');
             } else if (computerChoice === 'rock' && playerSelection === 'scissors') {
-                console.log('You lose!');
+                console.log('You lose! Rock beats Scissors!');
             } else if (computerChoice === 'paper' && playerSelection === 'rock') {
-                console.log('You lose!');
+                console.log('You lose! Paper beats Rock!');
             } else if (computerChoice === 'paper' && playerSelection === 'scissors') {
-                console.log('You win!');
+                console.log('You win! Scissors beats Paper!');
             } else if (computerChoice === 'scissors' && playerSelection === 'rock') {
-                console.log('You win!');
+                console.log('You win! Rock beats Scissors!');
             } else if (computerChoice === 'scissors' && playerSelection === 'paper') {
-                console.log('You lose');
+                console.log('You lose! Scissors beats paper!');
             } else {
-            console.log('Invalid input, please choose between "Rock", "Paper" or "Scissors"');
+                console.log('Invalid input, please choose between "Rock", "Paper" or "Scissors"');
             }
         }
 
