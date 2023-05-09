@@ -20,19 +20,19 @@
 
     
         function playRound(playerSelection, computerSelection) {
-            if (computerChoice === playerSelection) {
+            if (computerChoice === playerSelection.toLowerCase()) {
                 console.log("Draw!");
-            } else if (computerChoice === 'Rock' && playerSelection === 'Paper') {
+            } else if (computerChoice === 'Rock' && playerSelection.toLowerCase() === 'Paper') {
                 console.log('You Win! Paper beats Rock!');
-            } else if (computerChoice === 'Rock' && playerSelection === 'Scissors') {
+            } else if (computerChoice === 'Rock' && playerSelection.toLowerCase() === 'Scissors') {
                 console.log('You lose! Rock beats Scissors!');
-            } else if (computerChoice === 'Paper' && playerSelection === 'Rock') {
+            } else if (computerChoice === 'Paper' && playerSelection.toLowerCase() === 'Rock') {
                 console.log('You lose! Paper beats Rock!');
-            } else if (computerChoice === 'Paper' && playerSelection === 'Scissors') {
+            } else if (computerChoice === 'Paper' && playerSelection.toLowerCase() === 'Scissors') {
                 console.log('You win! Scissors beats Paper!');
-            } else if (computerChoice === 'Scissors' && playerSelection === 'Rock') {
+            } else if (computerChoice === 'Scissors' && playerSelection.toLowerCase() === 'Rock') {
                 console.log('You win! Rock beats Scissors!');
-            } else if (computerChoice === 'Scissors' && playerSelection === 'Paper') {
+            } else if (computerChoice === 'Scissors' && playerSelection.toLowerCase() === 'Paper') {
                 console.log('You lose! Scissors beats Paper!');
             } else {
                 console.log('Invalid input, please choose between "Rock", "Paper" or "Scissors"');
